@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>부산기계공업고등학교 부대시설 예약 &amp; 용품 대여</title>
+  <link rel="icon" type="image/png" href="images.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <img src="images.png" alt="부산기계공업고등학교 로고" class="logo">
+    <h1>부산기계공업고등학교<br>부대시설 예약 &amp; 용품 대여</h1>
+    <p>원하는 시설을 예약하고, 운동에 필요한 용품도 함께 빌려가세요!</p>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="facility">🏟️ 시설 예약</button>
+    <button class="tab-btn" data-tab="timetable">🗓️ 예약 시간표</button>
+    <button class="tab-btn" data-tab="item">🏸 용품 대여</button>
+    <button class="tab-btn" data-tab="mylist">📋 내 신청 내역</button>
+  </nav>
+
+  <main>
+    <section id="tab-facility" class="tab-content active">
+      <h2 class="section-title">부대시설 선택</h2>
+      <div id="facility-list" class="card-grid"></div>
+
+      <div id="facility-form-panel" class="form-panel hidden">
+        <div class="form-head">
+          <h3 id="facility-form-title"></h3>
+          <button class="close-btn" id="facility-close">✕</button>
+        </div>
+        <form id="facility-form">
+          <p class="hint">⚠️ 구기종목(족구·풋살·농구·배드민턴·배구)은 하루 1타임, 헬스장은 하루 2타임(타임당 최대 7명, 7명 찰 시 잠김)까지 예약할 수 있습니다.</p>
+          <label>이용 날짜
+            <input type="date" id="fac-date" required>
+          </label>
+          <div class="field-label">이용 시간대</div>
+          <div id="fac-slots" class="slot-grid"></div>
+          <div class="row">
+            <label>이름
+              <input type="text" id="fac-name" placeholder="홍길동" required>
+            </label>
+            <label>학번
+              <input type="text" id="fac-student-id" placeholder="예: 30115" required>
+            </label>
+          </div>
+          <button type="submit" class="btn-primary">예약하기</button>
+        </form>
+        <div class="slot-status">
+          <h4>해당 날짜 예약 현황</h4>
+          <ul id="fac-status-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="tab-timetable" class="tab-content">
+      <h2 class="section-title">예약 시간표</h2>
+      <div class="tt-controls">
+        <div id="tt-facilities" class="chip-row"></div>
+        <label class="tt-date">날짜
+          <input type="date" id="tt-date">
+        </label>
+      </div>
+      <div id="tt-table-wrap"></div>
+    </section>
+
+    <section id="tab-item" class="tab-content">
+      <h2 class="section-title">대여 용품 선택</h2>
+      <div id="item-list" class="card-grid"></div>
+
+      <div id="item-form-panel" class="form-panel hidden">
+        <div class="form-head">
+          <h3 id="item-form-title"></h3>
+          <button class="close-btn" id="item-close">✕</button>
+        </div>
+        <form id="item-form">
+          <label>대여 날짜
+            <input type="date" id="item-date" required>
+          </label>
+          <label>수량
+            <input type="number" id="item-qty" min="1" value="1" required>
+          </label>
+          <p class="remaining" id="item-remaining"></p>
+          <div class="row">
+            <label>이름
+              <input type="text" id="item-name" placeholder="홍길동" required>
+            </label>
+            <label>학번
+              <input type="text" id="item-student-id" placeholder="예: 30115" required>
+            </label>
+          </div>
+          <button type="submit" class="btn-primary">대여 신청하기</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="tab-mylist" class="tab-content">
+      <h2 class="section-title">내 신청 내역</h2>
+      <div id="my-list" class="history-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="images.png" alt="부산기계공업고등학교 로고" class="footer-logo">
+    <p class="footer-school">부산기계공업고등학교 부대시설 예약 &amp; 용품 대여 시스템</p>
+    <p>⚽ 족구장 · 풋살장 · 농구장 · 배드민턴코트(강당) · 배구네트 · 헬스장 | ⚽ 풋살공 · 🏀 농구공 · 🏐 배구공 · 🏸 라켓 · <img class="icon-img" src="shuttlecock.svg" alt="배드민턴 콕"> 콕</p>
+  </footer>
+
+  <div id="toast" class="hidden"></div>
+  <script src="app.js"></script>
+</body>
+</html>

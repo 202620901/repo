@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="featherG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.72" stop-color="#f5f5f1"/>
+      <stop offset="1" stop-color="#d8d8cf"/>
+    </linearGradient>
+    <radialGradient id="corkG" cx="0.38" cy="0.28" r="1">
+      <stop offset="0" stop-color="#fdf7e7"/>
+      <stop offset="0.55" stop-color="#efdfbc"/>
+      <stop offset="1" stop-color="#c2a678"/>
+    </radialGradient>
+    <linearGradient id="bandG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#37a862"/>
+      <stop offset="1" stop-color="#1d7a44"/>
+    </linearGradient>
+    <clipPath id="corkClip">
+      <path d="M49 80 C49 73.5 53.5 70.5 60 70.5 C66.5 70.5 71 73.5 71 80 L70.4 90 C70.4 97.5 65.9 102.5 60 102.5 C54.1 102.5 49.6 97.5 49.6 90 Z"/>
+    </clipPath>
+  </defs>
+
+  <ellipse cx="60" cy="106" rx="17" ry="3.6" fill="#1c2333" opacity="0.08"/>
+
+  <g transform="rotate(-55 60 84)">
+    <path d="M60 82 C57 68 54 50 53 40 C52.4 34 55 31 60 31 C65 31 67.6 34 67 40 C66 50 63 68 60 82 Z" fill="#e9e9e2" stroke="#c6c6bc" stroke-width="1"/>
+    <path d="M60 81 C59.6 66 59.6 50 60 35" fill="none" stroke="#c9c9bf" stroke-width="1.1"/>
+  </g>
+  <g transform="rotate(55 60 84)">
+    <path d="M60 82 C57 68 54 50 53 40 C52.4 34 55 31 60 31 C65 31 67.6 34 67 40 C66 50 63 68 60 82 Z" fill="#e9e9e2" stroke="#c6c6bc" stroke-width="1"/>
+    <path d="M60 81 C59.6 66 59.6 50 60 35" fill="none" stroke="#c9c9bf" stroke-width="1.1"/>
+  </g>
+
+  <g transform="rotate(-40 60 84)">
+    <path d="M60 84 C56 66 52 42 51 30 C50.3 24 54 20 60 20 C66 20 69.7 24 69 30 C68 42 64 66 60 84 Z" fill="url(#featherG)" stroke="#c9c9c0" stroke-width="1.1"/>
+    <path d="M60 82 C59.4 62 59.4 42 60 25" fill="none" stroke="#c2c2b8" stroke-width="1.3"/>
+  </g>
+  <g transform="rotate(40 60 84)">
+    <path d="M60 84 C56 66 52 42 51 30 C50.3 24 54 20 60 20 C66 20 69.7 24 69 30 C68 42 64 66 60 84 Z" fill="url(#featherG)" stroke="#c9c9c0" stroke-width="1.1"/>
+    <path d="M60 82 C59.4 62 59.4 42 60 25" fill="none" stroke="#c2c2b8" stroke-width="1.3"/>
+  </g>
+  <g transform="rotate(-20 60 84)">
+    <path d="M60 84 C56 66 52 42 51 30 C50.3 24 54 20 60 20 C66 20 69.7 24 69 30 C68 42 64 66 60 84 Z" fill="url(#featherG)" stroke="#c9c9c0" stroke-width="1.1"/>
+    <path d="M60 82 C59.4 62 59.4 42 60 25" fill="none" stroke="#c2c2b8" stroke-width="1.3"/>
+  </g>
+  <g transform="rotate(20 60 84)">
+    <path d="M60 84 C56 66 52 42 51 30 C50.3 24 54 20 60 20 C66 20 69.7 24 69 30 C68 42 64 66 60 84 Z" fill="url(#featherG)" stroke="#c9c9c0" stroke-width="1.1"/>
+    <path d="M60 82 C59.4 62 59.4 42 60 25" fill="none" stroke="#c2c2b8" stroke-width="1.3"/>
+  </g>
+  <g>
+    <path d="M60 84 C56 66 52 42 51 30 C50.3 24 54 20 60 20 C66 20 69.7 24 69 30 C68 42 64 66 60 84 Z" fill="url(#featherG)" stroke="#c9c9c0" stroke-width="1.1"/>
+    <path d="M60 82 C59.4 62 59.4 42 60 25" fill="none" stroke="#c2c2b8" stroke-width="1.3"/>
+  </g>
+
+  <path d="M49 80 C49 73.5 53.5 70.5 60 70.5 C66.5 70.5 71 73.5 71 80 L70.4 90 C70.4 97.5 65.9 102.5 60 102.5 C54.1 102.5 49.6 97.5 49.6 90 Z" fill="url(#corkG)" stroke="#a98f63" stroke-width="1"/>
+  <g clip-path="url(#corkClip)">
+    <rect x="49" y="79.5" width="22" height="6.4" fill="url(#bandG)"/>
+  </g>
+  <ellipse cx="56.5" cy="74.2" rx="5.4" ry="2.3" fill="#ffffff" opacity="0.5"/>
+</svg>
